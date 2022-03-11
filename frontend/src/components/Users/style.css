@@ -1,0 +1,17 @@
+.wrap {
+  padding: 20px;
+}
+
+.users {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-gap: 10px;
+}
+
+.logout {
+  text-align: right;
+}
+
+.logout button {
+  margin: 10px;
+}
