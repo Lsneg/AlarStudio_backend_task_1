@@ -16,6 +16,7 @@ createConnection()
     app.use(bodyParser.json());
 
     app.use("/", routes);
+    app.use('/static', express.static(__dirname + '/build/static'));
 
     app.listen(3001, () => {
       console.log("Server started on port 3000!");
