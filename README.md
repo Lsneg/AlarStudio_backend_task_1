@@ -28,7 +28,7 @@ frontend часть реализована на React, TypeScript.
 
 ## Пример работы
 
-ссылка:
+ссылка: http://134.0.118.21:3101/
 
 логин/пароль админа admin/admin
 
@@ -39,13 +39,14 @@ frontend часть реализована на React, TypeScript.
 1. в файле backend/ormconfig.json настраиваем config подключения к БД 
 
 2. Через Docker
-	1. из корневой директории ```docker run -d -p 3001:3001 app:v0.0.1```
-	2. В директории backend ```yarn install```
-	3. Запускаем миграцию ```yarn migration:run```
+	1. из корневой директории ```docker build -f Dockerfile -t app:v0.0.1 . ```
+	2. ```docker run -d -p 3001:3001 app:v0.0.1```
+	3. В директории backend ```yarn install```
+	4. Запускаем миграцию ```yarn migration:run```
 	
 3. Отдельно собрать фронт и бэк
 	1. в директории backend ```yarn install```
 	2. запускаем проект ```yarn start```
-	2. запускаем миграцию ```yarn migration:run``
+	2. запускаем миграцию ```yarn migration:run```
 	3. в директории frontend ```yarn install```
 	4. запускаем проект ```yarn start```
